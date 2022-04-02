@@ -13,6 +13,10 @@
   margin: 4px;
 }
 
+.grid-item.about {
+  max-width: 90%;
+}
+
 .grid-item {
   float: left;
 }

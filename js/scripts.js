@@ -232,6 +232,7 @@ for (category in ena_assets) {
 }
 
 // shuffleArray(gallery);
+/* gallery items */
 gallery.forEach(o => {
     $(".grid").append(`
         <div class="grid-item" data-type="${o.category}">
@@ -240,6 +241,38 @@ gallery.forEach(o => {
             </a>
         </div>`);
 });
+
+/* about */
+const urlParams = new URLSearchParams(window.location.search);
+let profile = "profile.01.jpg";
+if(urlParams.has("reality1")) {
+    profile = "troll.jpg";
+}
+if(urlParams.has("reality2")) {
+    profile = "besties.jpg";
+}
+$(".grid").append(`
+<div class="grid-item about" data-type="about">
+<div class="container">
+<div class="row">
+    <div class="col">
+        <h2>Anastasia Rayner</h2>
+        <p>Graphic designer and illustrator based out of Saint Petersburg</p>
+        <p>Currently freelancing 99designs</p>
+        <p>Bachelor of Arts in Graphic Design / Saint-Petersburg State University</p>
+        <div class="social-btns">
+            <i class="fa-brands fa-xl fa-instagram"></i>&nbsp;
+            <i class="fa-brands fa-xl fa-facebook"></i>&nbsp;
+            <i class="fa-brands fa-xl fa-linkedin"></i>
+        </div>
+    </div>
+    <div class="col">
+        <img class="thumb" src="assets/about/${profile}" loading="lazy">
+    </div>
+</div>
+</div>
+
+</div>`);
 
 // // init Masonry
 const masonry_cfg = {
@@ -288,11 +321,6 @@ $(".navbar-brand").click(function(event) {
 $(".nav-link").click(function(event) {
     event.preventDefault();
     const href = $(this).attr("href");
-    if(href === "about") {
-        gallery_navigate("*");
-        console.log("not yet implemented bro!");
-        return;
-    }
     gallery_navigate(`[data-type="${href}"]`);
 });
 
