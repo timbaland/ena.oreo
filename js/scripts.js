@@ -258,7 +258,7 @@ $(".grid").append(`
     <div class="col">
         <h2>Anastasia Rayner</h2>
         <p>Graphic designer and illustrator based out of Saint Petersburg</p>
-        <p>Currently freelancing 99designs</p>
+        <p>Currently freelancing for 99designs</p>
         <p>Bachelor of Arts in Graphic Design / Saint-Petersburg State University</p>
         <div class="social-btns">
             <i class="fa-brands fa-xl fa-instagram"></i>&nbsp;
