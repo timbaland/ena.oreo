@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* ---- grid ---- */
+.grid {
+  /*background: #DDD;*/
+  /*max-width: 1200px*/
+}
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  max-width: 30.333%;
+  margin: 4px;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid-item:hover .thumb {
+    opacity: 0.8;
+}
+
+.thumb {
+  background-color: #fff;
+  padding: 8px;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}

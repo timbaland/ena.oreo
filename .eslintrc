@@ -1,0 +1,25 @@
+{
+    "rules": {
+        "indent": ["error", 4, { "MemberExpression": "off" }],
+        "linebreak-style": ["error", "unix"],
+        "semi": ["error", "always"],
+        "no-console": 0,
+        "curly": [1, "multi-line"],
+        "dot-notation": 1,
+        "eqeqeq": 2,
+        "no-else-return": 1,
+        "no-shadow-restricted-names": 2,
+        "no-shadow": 2,
+        "array-bracket-spacing": [1, "never"],
+        "block-spacing": [1, "always"],
+        "comma-spacing": [1, {"before": false, "after": true}],
+        "new-cap": [2, {"capIsNew": false}],
+        "no-trailing-spaces": 2,
+        "space-infix-ops": [1, {"int32Hint": true}],
+        "space-before-function-paren": [1, { "anonymous": "always", "named": "never" }],
+        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "varsIgnorePattern": "colors" }]
+    },
+    "env": { "node": true, "es6": true },
+    "parserOptions": { "ecmaVersion": 2018, "sourceType": "module" },
+    "extends": "eslint:recommended"
+}
