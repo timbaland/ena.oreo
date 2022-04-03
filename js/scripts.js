@@ -267,7 +267,7 @@ $(".grid").append(`
         </div>
     </div>
     <div class="col">
-        <img class="thumb" src="assets/about/${profile}" loading="lazy">
+        <img class="profile-thumb" src="assets/about/${profile}" loading="lazy">
     </div>
 </div>
 </div>

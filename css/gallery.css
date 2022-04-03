@@ -37,3 +37,7 @@
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
+.profile-thumb {
+  border-radius: 10px;
+}
