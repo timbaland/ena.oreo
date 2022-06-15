@@ -213,6 +213,16 @@ const ena_assets = {
         {file: "poster.02.jpeg", thumb: "poster.02.jpg"},
         {file: "poster.06.jpeg", thumb: "poster.06.jpg"},
         {file: "och.png", thumb: "och.jpg"},
+    ],
+    "laventana": [
+        {file: "IMG_7154.jpg", thumb: "IMG_7154.jpg"},
+        {file: "IMG_7670.jpg", thumb: "IMG_7670.jpg"},
+        {file: "IMG_7671.jpg", thumb: "IMG_7671.jpg"},
+        {file: "IMG_7672.jpg", thumb: "IMG_7672.jpg"},
+        {file: "IMG_7673.jpg", thumb: "IMG_7673.jpg"},
+        {file: "IMG_7674.jpg", thumb: "IMG_7674.jpg"},
+        {file: "IMG_7675.jpg", thumb: "IMG_7675.jpg"},
+        {file: "IMG_7676.jpg", thumb: "IMG_7676.jpg"}
     ]
 };
 
@@ -274,6 +284,9 @@ $(".grid").append(`
 
 </div>`);
 
+let lightbox;
+let $grid;
+
 // // init Masonry
 const masonry_cfg = {
     itemSelector: ".grid-item",
@@ -289,21 +302,6 @@ const isotope_cfg = {
   sortBy: "original-order",
   masonry: masonry_cfg
 }
-
-const lightbox = GLightbox();
-
-const $grid = $(".grid").isotope(isotope_cfg);
-// layout Isotope after each image loads
-$grid.imagesLoaded().progress(() => {
-    $grid.isotope("layout");
-    lightbox.reload();
-});
-
-$grid.on('arrangeComplete', function(event, filteredItems) {
-    $(".grid-item:hidden a").removeClass("glightbox");
-    $(".grid-item:visible a").addClass("glightbox");
-    lightbox.reload();
-});
 
 const gallery_navigate = filter => {
     $grid.isotope({filter: filter});
@@ -331,4 +329,25 @@ navLinks.forEach((l) => {
         const bsCollapse = new bootstrap.Collapse(menuToggle);
         bsCollapse.toggle();
     })
+});
+
+document.addEventListener("DOMContentLoaded", function(){
+    lightbox = GLightbox();
+    $grid = $(".grid").isotope(isotope_cfg);
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress(() => {
+        $grid.isotope("layout");
+        lightbox.reload();
+    });
+
+    $grid.on('arrangeComplete', function(event, filteredItems) {
+        $(".grid-item:hidden a").removeClass("glightbox");
+        $(".grid-item:visible a").addClass("glightbox");
+        lightbox.reload();
+    });
+
+    if(urlParams.has("laventana")) {
+        console.log("laventana!!!");
+        gallery_navigate(`[data-type="laventana"]`);
+    }
 });
