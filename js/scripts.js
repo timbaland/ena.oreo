@@ -275,7 +275,8 @@ $(".grid").append(`
         <h2>Anastasia Rayner</h2>
         <p>Graphic designer and illustrator based in St. Petersburg</p>
         <p>Currently Working in UI, package design, animation, surface design, and advertising markets. My work has been featured on book covers, apparel, advertisements, wine labels, magazines, and newspapers around the world.</p>
-        <p>Bachelor of Arts in Graphic Design / St. Petersburg State University</p>
+        <p>Bachelor of Arts in Graphic Design | view my <a class="resume" href="/assets/about/cv.pdf" target="_blank">résumé</a></p>
+
         <div class="social-btns">
             <a class="none" href="https://www.instagram.com/slntboi"><i class="fa-brands fa-xl fa-instagram"></i></a>&nbsp;
             <a class="none" href="https://www.linkedin.com/in/anastasia-rayner"><i class="fa-brands fa-xl fa-linkedin"></i></a>
