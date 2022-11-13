@@ -260,7 +260,7 @@ gallery.forEach(o => {
 
 /* about */
 const urlParams = new URLSearchParams(window.location.search);
-let profile = "profile.01.jpg";
+let profile = "profile.03.jpg";
 if(urlParams.has("reality1")) {
     profile = "troll.jpg";
 }
@@ -273,13 +273,12 @@ $(".grid").append(`
 <div class="row">
     <div class="col">
         <h2>Anastasia Rayner</h2>
-        <p>Graphic designer and illustrator based out of Saint Petersburg</p>
-        <p>Currently freelancing for 99designs</p>
-        <p>Bachelor of Arts in Graphic Design / Saint-Petersburg State University</p>
+        <p>Graphic designer and illustrator based in St. Petersburg</p>
+        <p>Currently Working in UI, package design, animation, surface design, and advertising markets. My work has been featured on book covers, apparel, advertisements, wine labels, magazines, and newspapers around the world.</p>
+        <p>Bachelor of Arts in Graphic Design / St. Petersburg State University</p>
         <div class="social-btns">
-            <i class="fa-brands fa-xl fa-instagram"></i>&nbsp;
-            <i class="fa-brands fa-xl fa-facebook"></i>&nbsp;
-            <i class="fa-brands fa-xl fa-linkedin"></i>
+            <a class="none" href="https://www.instagram.com/slntboi"><i class="fa-brands fa-xl fa-instagram"></i></a>&nbsp;
+            <a class="none" href="https://www.linkedin.com/in/anastasia-rayner"><i class="fa-brands fa-xl fa-linkedin"></i></a>
         </div>
     </div>
     <div class="col">
