@@ -196,6 +196,8 @@ const ena_assets = {
         {file: "Quick.png", thumb: "Quick.jpg"},
     ],
     "posters": [
+        {file: "santorini.jpg", thumb: "santorini.jpg"},
+        {file: "jinro.jpg", thumb: "jinro.jpg"},
         {file: "poster.05.jpeg", thumb: "poster.05.jpg"},
         {file: "poster.08.jpeg", thumb: "poster.08.jpg"},
         {file: "1.jpg", thumb: "1.jpg"},
