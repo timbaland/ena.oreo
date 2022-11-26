@@ -20,6 +20,19 @@
 
 const gallery = [];
 const ena_assets = {
+    "featured": [
+        {dir: "illustrations", file: "jp.heaven.png", thumb: "jp.heaven.png"},
+        {dir: "posters", file: "jinro.jpg", thumb: "jinro.jpg"},
+        {dir: "websites", file: "asmi_web.jpg", thumb: "asmi_web.jpg"},
+        {dir: "posters", file: "santorini.jpg", thumb: "santorini.jpg"},
+        {dir: "illustrations", file: "tears.of.the.sun.png", thumb: "tears.of.the.sun.png"},
+        {dir: "illustrations", file: "merry.xmas.jpg", thumb: "merry.xmas.jpg"},
+        {dir: "illustrations", file: "jesse.marshmallow.png", thumb: "jesse.marshmallow.png"},
+        {dir: "illustrations", file: "Untitled_Artwork.05.png", thumb: "Untitled_Artwork.05.jpg"},
+        {dir: "illustrations", file: "Untitled_Artwork.04.png", thumb: "Untitled_Artwork.04.jpg"},
+        {dir: "illustrations", file: "Untitled_Artwork.03.png", thumb: "Untitled_Artwork.03.jpg"},
+        {dir: "illustrations", file: "Untitled_Artwork.02.png", thumb: "Untitled_Artwork.02.jpg"},
+    ],
     "design/book-covers": [
         {file: "book.02.jpeg", thumb: "book.02.jpg"},
         {file: "ds копия.jpg", thumb: "ds копия.jpg"},
@@ -112,6 +125,10 @@ const ena_assets = {
     "posters": [
         {file: "santorini.jpg", thumb: "santorini.jpg"},
         {file: "jinro.jpg", thumb: "jinro.jpg"},
+        {file: "jp.heaven.png", thumb: "jp.heaven.png"},
+        {file: "tears.of.the.sun.png", thumb: "tears.of.the.sun.png"},
+        {file: "merry.xmas.jpg", thumb: "merry.xmas.jpg"},
+        {file: "jesse.marshmallow.png", thumb: "jesse.marshmallow.png"},
         {file: "poster.05.jpeg", thumb: "poster.05.jpg"},
         {file: "poster.08.jpeg", thumb: "poster.08.jpg"},
         {file: "1.jpg", thumb: "1.jpg"},
@@ -245,7 +262,7 @@ const shuffleArray = array => {
 
 for (category in ena_assets) {
     ena_assets[category].forEach(path => {
-        gallery.push({category: category, file: path.file, thumb: path.thumb});
+        gallery.push({category: category, dir: path.dir || category, file: path.file, thumb: path.thumb});
     });
 }
 
@@ -254,8 +271,8 @@ for (category in ena_assets) {
 gallery.forEach(o => {
     $(".grid").append(`
         <div class="grid-item" data-type="${o.category}">
-            <a class="glightbox" href="assets/${o.category}/${o.file}">
-                <img class="thumb" src="assets/${o.category}/thumbs/${o.thumb}" loading="lazy">
+            <a class="glightbox" href="assets/${o.dir}/${o.file}">
+                <img class="thumb" src="assets/${o.dir}/thumbs/${o.thumb}" loading="lazy">
             </a>
         </div>`);
 });
