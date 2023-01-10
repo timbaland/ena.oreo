@@ -157,7 +157,7 @@ const ena_assets = {
         {file: "IMG_7675.jpg", thumb: "IMG_7675.jpg"},
         {file: "IMG_7676.jpg", thumb: "IMG_7676.jpg"}
     ],
-    "design/illustrative-logos": [
+    /*"design/illustrative-logos": [
         {file: "gt3.jpg", thumb: "gt3.jpg"},
         {file: "jst2.jpg", thumb: "jst2.jpg"},
         {file: "pch8.jpg", thumb: "pch8.jpg"},
@@ -193,7 +193,7 @@ const ena_assets = {
         {file: "gwa.jpg", thumb: "gwa.jpg"},
         {file: "oki.jpg", thumb: "oki.jpg"},
         {file: "ghb5.jpg", thumb: "ghb5.jpg"},
-    ],
+    ],*/
     "design/emblem-logos": [
         // {file:"ssa4.jpg", thumb: "ssa4.jpg"},
         {file:"50b2.jpg", thumb: "50b2.jpg"},
