@@ -23,6 +23,9 @@ const ena_assets = {
     "featured": [
         {dir: "illustrations", file: "xmas.snow.globe.png", thumb: "xmas.snow.globe.png"},
         {dir: "illustrations", file: "jp.heaven.png", thumb: "jp.heaven.png"},
+        {dir: "editorials", file: "china.protest.png", thumb: "china.protest.png"},
+        {dir: "editorials", file: "same.sex.marriage.png", thumb: "same.sex.marriage.png"},
+        {dir: "editorials", file: "winter.heating.costs.png", thumb: "winter.heating.costs.png"},
         {dir: "posters", file: "jinro.jpg", thumb: "jinro.jpg"},
         {dir: "websites", file: "asmi_web.jpg", thumb: "asmi_web.jpg"},
         {dir: "posters", file: "santorini.jpg", thumb: "santorini.jpg"},
@@ -37,6 +40,16 @@ const ena_assets = {
         {dir: "illustrations", file: "Untitled_Artwork.04.png", thumb: "Untitled_Artwork.04.jpg"},
         {dir: "illustrations", file: "Untitled_Artwork.03.png", thumb: "Untitled_Artwork.03.jpg"},
         {dir: "illustrations", file: "Untitled_Artwork.02.png", thumb: "Untitled_Artwork.02.jpg"},
+    ],
+    "editorials": [
+        {file: "china.protest.png", thumb: "china.protest.png"},
+        {file: "cooking.oil.png", thumb: "cooking.oil.png"},
+        {file: "crypto.regulation.png", thumb: "crypto.regulation.png"},
+        {file: "hyperbeast.png", thumb: "hyperbeast.png"},
+        {file: "indonesian.islands.png", thumb: "indonesian.islands.png"},
+        {file: "same.sex.marriage.png", thumb: "same.sex.marriage.png"},
+        {file: "telepathic.typing.png", thumb: "telepathic.typing.png"},
+        {file: "winter.heating.costs.png", thumb: "winter.heating.costs.png"},
     ],
     "design/book-covers": [
         {file: "book.02.jpeg", thumb: "book.02.jpg"},
