@@ -21,6 +21,7 @@
 const gallery = [];
 const ena_assets = {
     "featured": [
+        {dir: "illustrations", file: "xmas.snow.globe.png", thumb: "xmas.snow.globe.png"},
         {dir: "illustrations", file: "jp.heaven.png", thumb: "jp.heaven.png"},
         {dir: "posters", file: "jinro.jpg", thumb: "jinro.jpg"},
         {dir: "websites", file: "asmi_web.jpg", thumb: "asmi_web.jpg"},
@@ -50,6 +51,11 @@ const ena_assets = {
         {file: "Mockup3.jpg", thumb: "Mockup3.jpg"},
     ],
     "illustrations": [
+        {file: "xmas.snow.globe.png", thumb: "xmas.snow.globe.png"},
+        {file: "jp.heaven.png", thumb: "jp.heaven.png"},
+        {file: "tears.of.the.sun.png", thumb: "tears.of.the.sun.png"},
+        {file: "merry.xmas.jpg", thumb: "merry.xmas.jpg"},
+        {file: "jesse.marshmallow.png", thumb: "jesse.marshmallow.png"},
         {file: "Untitled_Artwork.03.png", thumb: "Untitled_Artwork.03.jpg"},
         {file: "Lucio_x_Elaine.png", thumb: "Lucio_x_Elaine.jpg"},
         {file: "Untitled_Artwork.01.png", thumb: "Untitled_Artwork.01.jpg"},
@@ -125,10 +131,6 @@ const ena_assets = {
     "posters": [
         {file: "santorini.jpg", thumb: "santorini.jpg"},
         {file: "jinro.jpg", thumb: "jinro.jpg"},
-        {file: "jp.heaven.png", thumb: "jp.heaven.png"},
-        {file: "tears.of.the.sun.png", thumb: "tears.of.the.sun.png"},
-        {file: "merry.xmas.jpg", thumb: "merry.xmas.jpg"},
-        {file: "jesse.marshmallow.png", thumb: "jesse.marshmallow.png"},
         {file: "poster.05.jpeg", thumb: "poster.05.jpg"},
         {file: "poster.08.jpeg", thumb: "poster.08.jpg"},
         {file: "1.jpg", thumb: "1.jpg"},
